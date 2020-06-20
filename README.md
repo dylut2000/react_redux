@@ -1,3 +1,12 @@
+Simple redux setup by [Dylut](https://twitter.com/dylut2000?lang=en).
+
+Add Redux and React-redux
+```
+yarn add redux react-redux 
+```
+<hr>
+<br />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +75,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
