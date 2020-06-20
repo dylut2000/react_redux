@@ -8,8 +8,8 @@ import { combineReducers } from 'redux';
  * easy access
  */
 const rootReducer = combineReducers({
-    counter: counterReducer,
-    isLogged: isLoggedReducer
+  counter: counterReducer,
+  isLogged: isLoggedReducer
 });
 
 export default rootReducer;
