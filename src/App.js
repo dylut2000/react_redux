@@ -21,23 +21,27 @@ function App() {
       <p>Provide a number</p>
       <input type='number' value={counterValue} onChange={editCounterValue} />
       <div style={{ marginTop: 20 }}>
-        {/* calling the 'increment' action, and passing argument to be use in the payload*/}
-        <button
-          onClick={() => {
-            dispatch(increment(counterValue));
-            setCounterValue('');
-          }}
-        >
-          Add
-        </button>
-        <button
-          onClick={() => {
-            dispatch(decrement(counterValue));
-            setCounterValue('');
-          }}
-        >
-          Remove
-        </button>
+        {counterValue && (
+          <>
+          {/* calling the 'increment' action, and passing argument to be use in the payload*/}
+            <button
+              onClick={() => {
+                dispatch(increment(counterValue));
+                setCounterValue('');
+              }}
+            >
+              Add
+            </button>
+            <button
+              onClick={() => {
+                dispatch(decrement(counterValue));
+                setCounterValue('');
+              }}
+            >
+              Remove
+            </button>
+          </>
+        )}
       </div>
       {/* using counter state value from the store*/}
       <h1>Counter : {counter}</h1>
