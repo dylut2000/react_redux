@@ -7,9 +7,9 @@ import { combineReducers } from 'redux';
  * them as their are, im going to rename them for
  * easy access
  */
-const rootReducers = combineReducers({
+const rootReducer = combineReducers({
     counter: counterReducer,
     isLogged: isLoggedReducer
 });
 
-export default rootReducers;
+export default rootReducer;
